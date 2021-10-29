@@ -9,10 +9,7 @@ import random
 import time
 
 def displayIntro():
-	print('''You are in a land full of dragons. In front of you,
-	you see two caves. In one cave, the dragon is friendly
-	and will share his treasure with you. The other dragon
-	is greedy and hungry, and will eat you on sight.\n''')
+	print('You are in a land full of dragons.\nIn front of you, you see two caves. In one\ncave, the dragon is friendly and will share\nhis treasure with you. The other dragon is\ngreedy and hungry, and will eat you on sight.')
 
 def chooseCave():
     cave = ''
@@ -27,7 +24,7 @@ def checkCave(chooseCave):
 	print('It is dark and spooky...')
 	#sleep for 2 seconds
 	time.sleep(2)
-	print('A large dragon jumps out in front of you! He opens his jaws and...\n')
+	print('A large dragon jumps out in front of you! He opens his jaws and...')
 	#sleep for 2 seconds
 	time.sleep(2)
 	friendlyCave = random.randint(1, 2)
@@ -46,4 +43,4 @@ while playAgain == 'yes' or playAgain == 'y':
 	print('Do you want to play again? (yes or no)')
 	playAgain = input()
 	if playAgain == "no":
-		print("Thanks for planing")
+		print("Thanks for playing")
